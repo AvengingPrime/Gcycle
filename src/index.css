@@ -15,15 +15,15 @@ code {
 .App-header {
     display: flex;
     width: 100vh;
-    height: 1.5rem;
+    height: 10vh;
     gap: .3rem;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .nav-btn {
-    width: 100%;
-    height: 100%;
+    width: 45vw;
+    height: 90%;
     background-color: lightskyblue;
     color: black;
 }
