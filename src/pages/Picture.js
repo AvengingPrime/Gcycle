@@ -5,11 +5,8 @@ const Picture = () => {
 
     return (
         <>
-            <div className={photoTaken? 'photo-taken':'photo-not-taken'} id="viewport">
-                {
-                    photoTaken?
-                        <></>:<></>
-                }
+            <div className={'photo'} id="viewport">
+                <img src={process.env.PUBLIC_URL+"Image.jpeg"}></img>
             </div>
             <div id="camera-controls">
                 <button onClicked={() => setPhotoTaken(true)}>
