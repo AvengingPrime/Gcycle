@@ -9,10 +9,9 @@ import Game from './pages/Game'
 const Main = (props) => {
   return (
     <Routes> {/* The Switch decides which component to show based on the current URL.*/}
-      <Route path='/' element={<Home userHandle={props.userHandle} globalStatsHandle={props.globalStatsHandle}/>}/>
+      <Route path='/' element={<Game/>}/>
       <Route path='/picture' element={<Picture/>}/>
-      <Route path='/results' element={<Results/>}/>
-      <Route path='/game' element={<Game/>}/>
+      <Route path='/results' element={<Results userHandle={props.userHandle} globalStatsHandle={props.globalStatsHandle}/>}/>
     </Routes>
   );
 }

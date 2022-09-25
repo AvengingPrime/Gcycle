@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { Link } from "react-router-dom";
 
 
-import Main from './Main.js'
+import Main from './Main'
 
 const user = {
     name: 'Vivan',
@@ -37,18 +37,13 @@ const Navbar = () => {
     return (
         <>
             <Link to="/">
-                <button id="btn-stats">
-                    <i className="fa-solid fa-chart-pie"></i>
+                <button className="nav-btn" id="btn-game">
+                    <i className="fa-solid fa-gamepad"></i>
                 </button>
             </Link>
             <Link to="/picture">
-                <button id="btn-stats">
+                <button className="nav-btn" id="btn-picture">
                     <i className="fa-solid fa-bottle-water"></i>
-                </button>
-            </Link>
-            <Link to="/game">
-                <button id="btn-stats">
-                    <i className="fa-solid fa-gamepad"></i>
                 </button>
             </Link>
         </>

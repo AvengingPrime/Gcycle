@@ -12,8 +12,8 @@ const Picture = () => {
                 }
             </div>
             <div id="camera-controls">
-                <button onClicked={setPhotoTaken(true)}>
-                    <i className="fa-sharp fa-solid fa-circle-camera"></i>
+                <button onClicked={() => setPhotoTaken(true)}>
+                    <i className="fa-solid fa-circle-camera"></i>
                 </button>
             </div>
         </>
