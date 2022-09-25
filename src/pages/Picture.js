@@ -6,7 +6,12 @@ const Picture = () => {
     return (
         <>
             <div className={'photo'} id="viewport">
-                <img src={process.env.PUBLIC_URL+"images/PepsiCan.jpeg"}></img>
+                <img 
+                    width = {250}
+                    height = {250}
+                    src={process.env.PUBLIC_URL+"images/PepsiCan.jpeg"}
+                >
+                </img>
             </div>
             <div id="camera-controls">
                 <button onClicked={() => setPhotoTaken(true)}>
