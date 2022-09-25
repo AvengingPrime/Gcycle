@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const Results = (props) => {
     const [photoTaken, setPhotoTaken] = useState(false);
 
